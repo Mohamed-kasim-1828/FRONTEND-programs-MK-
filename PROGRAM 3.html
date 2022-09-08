@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Program 3 </title>
+<style>
+h1 {color:green;}
+p {color:blue;}
+a {color:red;}
+table, tr, td {
+border: 2px solid black;
+padding:5px;
+</style>
+</head>
+<body style="background-color:yellow;">
+<h1><center><b><i>Calculator</i></b></h1>
+<p>Creating a Calculator using Javascript.</p>
+<script language ="javascript">
+function add()
+{
+var a = parseInt(form1.text1.value);
+var b = parseInt(form1.text2.value);
+form1.text3.value=a+b;
+}
+function sub()
+{
+var a = parseInt(form1.text1.value);
+var b = parseInt(form1.text2.value);
+form1.text3.value=a-b;
+}
+function mul()
+{
+var a = parseInt(form1.text1.value);
+var b = parseInt(form1.text2.value);
+form1.text3.value=a*b;
+}
+function div()
+{
+var a = parseInt(form1.text1.value);
+var b = parseInt(form1.text2.value);
+form1.text3.value=a/b;
+}
+</script>
+<form name = form1>
+
+<table align ="left" style="color=blue;">
+
+<tr>
+<td>Enter value for A</td>
+<td><input type = text name = text1></td>
+</tr>
+
+<tr>
+<td>Enter value for B</td>
+<td><input type = text name = text2></td>
+</tr>
+
+<tr>
+<td>Result</td>
+
+<td><input type = text name = text3></td>
+</tr>
+
+</table>
+
+<table style="border: 2px solid black;
+padding:2px;">
+
+<tr><td>
+<input type = button style="color:blue" value ="Addition" onclick=add()></td>
+<td><input type = button style="color:blue" value ="Subtraction" onclick=sub()></td></tr>
+<tr><td><input type = button style="color:blue" value ="Multiplication" onclick=mul()></td>
+<td><input type = button style="color:blue" value ="Division" onclick=div()></td>
+</tr>
+</table></form>
+</body>
+</html>
